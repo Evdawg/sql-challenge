@@ -1,4 +1,4 @@
--- -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
+-- -- Exported from QuickDBD: https://www.quickdatabasediagrams.com/not null
 -- -- Link to schema: https://app.quickdatabasediagrams.com/#/d/vjsQwd
 -- -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
@@ -6,24 +6,24 @@
 -- -- Comment out table creation after running and importing csv data:
 
 -- CREATE TABLE "departments" (
---     "dept_no" VARCHAR   NOT NULL,
---     "dept_name" VARCHAR   NOT NULL,
+--     "dept_no" VARCHAR(5)   NOT NULL,
+--     "dept_no" VARCHAR(50),
 --     CONSTRAINT "pk_departments" PRIMARY KEY (
 --         "dept_no"
 --      )
 -- );
 
 -- CREATE TABLE "dept_emp" (
---     "emp_no" VARCHAR   NOT NULL,
---     "dept_no" VARCHAR   NOT NULL,
+--     "emp_no" VARCHAR(6)   NOT NULL,
+--     "dept_no" VARCHAR(5)   NOT NULL,
 --     CONSTRAINT "pk_dept_emp" PRIMARY KEY (
 --         "emp_no","dept_no"
 --      )
 -- );
 
 -- CREATE TABLE "dept_manager" (
---     "dept_no" VARCHAR   NOT NULL,
---     "emp_no" VARCHAR   NOT NULL,
+--     "dept_no" VARCHAR(5)   NOT NULL,
+--     "emp_no" VARCHAR(6),
 --     CONSTRAINT "pk_dept_manager" PRIMARY KEY (
 --         "emp_no"
 --      )
@@ -32,13 +32,13 @@
 -- -- note the date format in employees needs convert from string format.
 -- -- use conversion functions if needed for querying.
 -- CREATE TABLE "employees" (
---     "emp_no" VARCHAR   NOT NULL,
---     "emp_title" VARCHAR   NOT NULL,
---     "birth_date" VARCHAR   NOT NULL,
---     "first_name" VARCHAR   NOT NULL,
---     "last_name" VARCHAR   NOT NULL,
---     "sex" VARCHAR   NOT NULL,
---     "hire_date" VARCHAR   NOT NULL,
+--     "emp_no" VARCHAR(6)   NOT NULL,
+--     "emp_title" VARCHAR(6)   NOT NULL,
+--     "birth_date" VARCHAR(9),
+--     "first_name" VARCHAR(50),
+--     "last_name" VARCHAR(70),
+--     "sex" VARCHAR(1),
+--     "hire_date" VARCHAR(9),
 --     CONSTRAINT "pk_employees" PRIMARY KEY (
 --         "emp_no"
 --      )
@@ -46,8 +46,8 @@
 
 
 -- CREATE TABLE "salaries" (
---     "emp_no" VARCHAR   NOT NULL,
---     "salary" INT   NOT NULL,
+--     "emp_no" VARCHAR(6)   NOT NULL,
+--     "salary" INT,
 --     CONSTRAINT "pk_salaries" PRIMARY KEY (
 --         "emp_no"
 --      )
@@ -56,7 +56,7 @@
 
 -- CREATE TABLE "titles" (
 --     "title_id" VARCHAR   NOT NULL,
---     "title" VARCHAR   NOT NULL,
+--     "emp_no" VARCHAR(60),
 --     CONSTRAINT "pk_titles" PRIMARY KEY (
 --         "title_id"
 --      )
@@ -82,5 +82,4 @@
 -- REFERENCES "employees" ("emp_no");
 
 -----------------------------------------------------------------------------------------------------
-
 
