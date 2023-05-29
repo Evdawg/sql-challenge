@@ -9,3 +9,10 @@ Graded __/100
 
 [2] Alter table to include NOT NULL constraint:
 	https://www.w3schools.com/sql/sql_notnull.asp
+
+[3] Foreign Keys:
+	https://www.w3schools.com/sql/sql_foreignkey.asp
+
+
+[4] SQL Schema export from QuickDBD tool:
+	https://app.quickdatabasediagrams.com/#/d/vjsQwd
