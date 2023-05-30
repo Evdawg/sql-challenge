@@ -16,3 +16,6 @@ Graded __/100
 
 [4] SQL Schema export from QuickDBD tool:
 	https://app.quickdatabasediagrams.com/#/d/vjsQwd
+
+[5] Difference between JOIN and UNION in SQL:
+	https://www.geeksforgeeks.org/difference-between-join-and-union-in-sql/#
