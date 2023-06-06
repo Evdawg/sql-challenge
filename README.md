@@ -1,7 +1,7 @@
 # sql-challenge
 Module 9 Challenge
 
-Graded __/100
+Graded 100/100
 
 
 [1] Assign primary key after table is created:
